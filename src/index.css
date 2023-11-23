@@ -7,6 +7,9 @@
     --font-primary-color: #FFF;
     --font-secondary-color: #000000;
     --font-tertiary-color: #7E7E7E;
+    --font-quaternary-color: #262626;
+
+    --border-primary-color: #D9D9D9;
 }
 
 *{
@@ -19,4 +22,15 @@
 h1{
     font-weight: 500;
     font-size: 24px;
+}
+
+button{
+    background-color: var(--bg-primary-color);
+    color: var(--font-primary-color);
+    border: none;
+    border-radius: 4px;
+    width: 101px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
 }

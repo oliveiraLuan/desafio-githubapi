@@ -1,4 +1,4 @@
-h2{
+.title{
     font-weight: 700;
     font-size: 48px;
     color: var(--font-secondary-color);
@@ -8,21 +8,16 @@ h2{
     padding: 20px;
 }
 
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 960px;
+    height: 240px;
+}
+
 .subtitle{
     color: var(--font-tertiary-color);
     font-weight: 700;
     font-size: 24px;
-    margin-top: 10px;
-}
-
-.btn-start{
-    background-color: var(--bg-primary-color);
-    color: var(--font-primary-color);
-    border: none;
-    border-radius: 4px;
-    width: 101px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 20px;
 }
