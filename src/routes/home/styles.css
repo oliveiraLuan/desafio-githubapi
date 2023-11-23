@@ -1,0 +1,28 @@
+h2{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--font-secondary-color);
+}
+
+.home-section{
+    padding: 20px;
+}
+
+.subtitle{
+    color: var(--font-tertiary-color);
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.btn-start{
+    background-color: var(--bg-primary-color);
+    color: var(--font-primary-color);
+    border: none;
+    border-radius: 4px;
+    width: 101px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+}
