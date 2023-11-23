@@ -1,11 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./routes/home"
 
 
 function App() {
 
   return (
-    <>
-      <h1>Desafio Github API</h1>
-    </>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home/>}>
+
+            </Route>
+        </Routes>
+    </BrowserRouter>
   )
 }
 
