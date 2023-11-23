@@ -1,0 +1,33 @@
+.profile-section{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--bg-secondary-color);
+    max-width: 1251px;
+    width: 80vw;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 16px;
+    justify-content: space-around;
+}
+
+.title-container{
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--font-quaternary-color);
+}
+
+.inputUser{
+    background-color: white;
+    border: 1px solid var(--border-primary-color);
+    max-width: 298px;
+    height: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
