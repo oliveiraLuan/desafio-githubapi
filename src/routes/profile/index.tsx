@@ -1,6 +1,7 @@
-import { useState } from "react";
 import Header from "../../components/Header";
 import "./styles.css";
+import * as githubService from '../services/GithubService';
+import { useState } from "react";
 
 export default function Profile() {
   type FormData = {
@@ -17,9 +18,9 @@ export default function Profile() {
     setFormData({ ...formData, [name]: value });
   }
 
-  function handleBtn(event) {
-    event.preventDefault();
-    console.log(formData.user);
+  function handleBtn(event : any){
+      event.preventDefault();
+      githubService.findUser(formData.user);
   }
 
   return (
