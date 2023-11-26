@@ -31,3 +31,20 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+.result-section{
+    display: flex;
+    justify-content: center;
+}
+
+.container-profile {
+    background-color: var(--bg-tertiary-color);
+    max-width: 1251px;
+    width: 80vw;
+    height: 270px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
