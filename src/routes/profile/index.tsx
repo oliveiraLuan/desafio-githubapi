@@ -4,7 +4,6 @@ import * as githubService from '../services/GithubService';
 import { useState } from "react";
 import { UserDTO } from "../../models/UserDTO";
 import ProfileDetails from "../../components/ProfileDetails";
-import { BASE_URL } from "../../utils/constants";
 
 export default function Profile() {
   type FormData = {
@@ -23,12 +22,16 @@ export default function Profile() {
     setFormData({ ...formData, [name]: value });
   }
 
+  const errorElement = document.getElementById("errorH2");
+
   function handleBtn(event : any){
       event.preventDefault();
       githubService.findUser(formData.user).then(response => {
           setUser(response.data);
+          errorElement.innerHTML = "";
       }).catch(() => {
-          console.log("Erro na chamada, usuário não encontrado.");
+          setUser(undefined);
+          errorElement.innerHTML = "Erro ao buscar o usuário";
       });
   }
 
@@ -52,9 +55,8 @@ export default function Profile() {
         </form>
       </section>
       <section className="result-section">
-        <div className="container-profile">
+           <h2 id="errorH2"></h2>
           {user && <ProfileDetails  user={user}/>}
-        </div>
       </section>
     </>
   );
